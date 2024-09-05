@@ -1,0 +1,4 @@
+{:tasks
+ {compile (shell "g++" "fpex.c")
+  fpex (do (shell "./a.out")
+           (println "I am not executed"))}}
