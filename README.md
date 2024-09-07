@@ -38,15 +38,17 @@ Also not as expected.
 
 ````bb task-ex````
 
-This works as expected.
+This works as expected. It raises an exception, because the called code raises it.
 
 ````bb task-shex````
 
-This works as expected.
+This works as expected. It raises an exception, because the called shell command fails.
 
 ````bb task-shret1````
 
-This works as expected.
+This works as expected. It raises an exception, because the called shell command fails.
+
+
 
 # Second Issue
 
