@@ -32,6 +32,10 @@ the task `task-shret` an exception is raused. The behacior of `shell` should
 not be different. And the exception mechanism should also not behave different
 on both cases.
 
+````bb task-fpex````
+
+Also not as expected.
+
 ````bb task-ex````
 
 This works as expected.
