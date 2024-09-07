@@ -1,16 +1,8 @@
 {:paths ["."]
  :tasks
- {task-ret0 (do (shell "gcc" "ret0.c" "-o" "ret0")
-            (shell "./ret0"))
+  {task-shret1 {:requires ([helpers]) :task (helpers/ret1)}
+   
+   task-raise {:requires ([helpers]) :task (helpers/raise)}
   
-  task-ret1 (do (shell "gcc" "ret1.c" "-o" "ret1")
-                (shell "./ret1"))
-  
-  task-fpex (do (shell "gcc" "-w" "fpex.c" "-o" "fpex")
-                (shell "./fpex"))
-            
-  task-ex {:requires ([ex]) :task (ex/retex) }
-  
-  task-shex {:requires ([ex]) :task (ex/shex) }
-
-  task-shret1 {:requires ([ex]) :task (ex/shret1) }}}
+   task-ret1 (do (shell "gcc" "ret1.c" "-o" "ret1")
+                (shell "./ret1"))}}
