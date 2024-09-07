@@ -10,6 +10,8 @@ This works as expected.
 
 This raises an exception with the message "Could not resolve symbol: ELF>"
 
+# Second Issue
+
 ````bb ret1.bb````
 
 This works as expected. It raises an exception, because wer return 1.
@@ -50,7 +52,7 @@ This works as expected. It raises an exception, because the called shell command
 
 
 
-# Second Issue
+# Third Issue
 
 Babashka has the command argument `--debug`. But Babashka showed me all these
 Exception information including the stack trace already without this argument.
