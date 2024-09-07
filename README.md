@@ -8,7 +8,7 @@ This works as expected.
 
 ````bb ret0````
 
-This raises an exception with the message "Could not resolve symbol: ELF>"
+This raises an exception with the message "Could not resolve symbol: ELF>". This is "somehoe" expected. But the message is not helpful for the user. The problem is that ret0 is not a Babashka script. So we should better say this.
 
 # Second Issue
 
