@@ -1,4 +1,19 @@
-{:tasks
- {compile (shell "g++" "fpex.c")
-  fpex (do (shell "./a.out")
-           (println "I am not executed"))}}
+{:paths ["."]
+ :tasks
+ {task-ret0 (do (shell "g++" "ret0.c" "-o" "ret0")
+            (shell "./ret0"))
+  
+  task-ret1 (do (shell "g++" "ret1.c")
+                (shell "./a.out"))
+  
+  task-fpex (do (shell "g++" "-w" "fpex.c")
+                (shell "./a.out"))
+            
+  task-ex {:requires ([ex]) :task (ex/retex) }
+  
+  task-shex {:requires ([ex]) :task (ex/shex) }
+
+  task-shret1 {:requires ([ex]) :task (ex/shret1) }
+
+  
+  }}
