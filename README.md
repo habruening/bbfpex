@@ -29,8 +29,8 @@ This is inconsistent, because the tasks `task-ex` raises an exception.
 You could argue that the behaviour of the tasking mechanism is that shell
 suppresses excpetions. But when you call shell via another funktion (see
 the task `task-shret` an exception is raused. The behacior of `shell` should
-not be different. And the exception mechanism should also not behave different
-on both cases.
+not be different. And the exception mechanism should also not behave
+differently in both cases.
 
 ````bb task-fpex````
 
