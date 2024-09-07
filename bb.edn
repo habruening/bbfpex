@@ -13,7 +13,4 @@
   
   task-shex {:requires ([ex]) :task (ex/shex) }
 
-  task-shret1 {:requires ([ex]) :task (ex/shret1) }
-
-  
-  }}
+  task-shret1 {:requires ([ex]) :task (ex/shret1) }}}
