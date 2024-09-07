@@ -1,13 +1,13 @@
 {:paths ["."]
  :tasks
- {task-ret0 (do (shell "g++" "ret0.c" "-o" "ret0")
+ {task-ret0 (do (shell "gcc" "ret0.c" "-o" "ret0")
             (shell "./ret0"))
   
-  task-ret1 (do (shell "g++" "ret1.c")
-                (shell "./a.out"))
+  task-ret1 (do (shell "gcc" "ret1.c" "-o" "ret1")
+                (shell "./ret1"))
   
-  task-fpex (do (shell "g++" "-w" "fpex.c")
-                (shell "./a.out"))
+  task-fpex (do (shell "gcc" "-w" "fpex.c" "-o" "fpex")
+                (shell "./fpex"))
             
   task-ex {:requires ([ex]) :task (ex/retex) }
   
